@@ -19,12 +19,14 @@ Basically I modified two functions from the Adafruit_ADS1X15.h library
 	-  void Adafruit_ADS1X15::writeRegister(uint8_t reg, uint16_t value)
 	- uint16_t Adafruit_ADS1X15::readRegister(uint8_t reg)
 
-I have replaced the calls to wire.h by  calls to the espresif library as explained in the espresif guide. 
+ I have replaced the calls to wire.h by  calls to the espresif library as explained in the espresif guide. 
 
 
- Note:
-The I2C initialization is done in the set-up section of I2C_espressif_ADC_1015.ino sketch.
-Which makes it easier to make changes such as the I2C speed.
+ Notes:
+      1-  The I2C initialization is done in the set-up section of I2C_espressif_ADC_1015.ino sketch.
+           Which makes it easier to make changes such as the I2C speed.
+      2-  I have not changed the names of the Adafruit files Adafruit_ADS1X15.cpp  and Adafruit_ADS1X15.h
 
- How to try it
-Copy the three files into a   I2C_espressif_ADC_1015   folder and compile.
+ How to try it:
+      Copy the three files  I2C_espressif_ADC_1015.ino, Adafruit_ADS1X15.cpp  and Adafruit_ADS1X15.h  into a   I2C_espressif_ADC_1015   folder and compile.
+  
